@@ -5,11 +5,14 @@ require "human_size_to_number/version"
 Gem::Specification.new do |s|
   s.name        = "human_size_to_number"
   s.version     = HumanSizeToNumber::VERSION
+  s.platform    = Gem::Platform::RUBY
+  s.date        = File.utime("lib/human_size_to_number/version.rb")
   s.authors     = ["zedtux"]
   s.email       = ["zedtux@zedroot.org"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/zedtux/human_size_to_number"
   s.summary     = %q{Implement missing reverse of ActionView::Helpers::NumberHelper#number_to_human_size}
   s.description = %q{Convert a size string like 1.12KB to the number value in Bytes.}
+  s.has_rdoc    = false
 
   s.rubyforge_project = "human_size_to_number"
 
