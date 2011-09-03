@@ -27,6 +27,11 @@ Compatibility
 
 human\_size\_to\_number is tested against REE.
 
+<img src="https://travis-ci.org/zedtux/human_size_to_number.png?branch=master&.png"/>
+
+[Build History](http://travis-ci.org/zedtux/human_size_to_number)
+
+
 License
 -------
 
