@@ -20,17 +20,13 @@ class String
         return size
       end
     end
-    case unit
-    when "Bytes"
-      number.to_i
-    when "KB"
-      number * 1024
-    when "MB"
-      number * 1024 * 1024
-    when "GB"
-      number * 1024 * 1024 * 1024
-    when "TB"
-      number * 1024 * 1024 * 1024 * 1024
+    number = case unit
+    when "Bytes": number
+    when "KB": number * 1024
+    when "MB": number * 1024 * 1024
+    when "GB": number * 1024 * 1024 * 1024
+    when "TB": number * 1024 * 1024 * 1024 * 1024
     end
+    number.round
   end
 end
