@@ -25,7 +25,7 @@ Project Tracking
 Compatibility
 -------------
 
-human\_size\_to\_number is tested against REE.
+human\_size\_to\_number is tested against REE, ruby-head, jruby, 1.8.7, 1.9.2, 1.9.3.
 
 <img src="https://travis-ci.org/zedtux/human_size_to_number.png?branch=master&.png"/>
 
