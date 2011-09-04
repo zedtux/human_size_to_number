@@ -9,12 +9,12 @@ This gem implement the missing reverse of the [ActionView::Helpers::NumberHelper
 Usage
 -----
 
-    > human_size_to_number("123 Bytes") # => 123
-    > human_size_to_number("1.12 KB")   # => 1239.04
-    > human_size_to_number("12.1 KB")   # => 12390.4
-    > human_size_to_number("1.18 MB")   # => 1237319.68
-    > human_size_to_number("1.15 GB")   # => 1234803097.6
-    > human_size_to_number("1.12 TB")   # => 1231453023109.12
+    > "123 Bytes".human_size_to_number # => 123
+    > "1.12 KB".human_size_to_number   # => 1239
+    > "12.1 KB".human_size_to_number   # => 12390
+    > "1.18 MB".human_size_to_number   # => 1237320
+    > "1.15 GB".human_size_to_number   # => 1234803098
+    > "1.12 TB".human_size_to_number   # => 1231453023109
 
 Project Tracking
 ----------------
