@@ -21,11 +21,16 @@ class String
       end
     end
     number = case unit
-    when "Bytes": number
-    when "KB": number * 1024
-    when "MB": number * 1024 * 1024
-    when "GB": number * 1024 * 1024 * 1024
-    when "TB": number * 1024 * 1024 * 1024 * 1024
+    when "Bytes"
+      number
+    when "KB"
+      number * 1024
+    when "MB"
+      number * 1024 * 1024
+    when "GB"
+      number * 1024 * 1024 * 1024
+    when "TB"
+      number * 1024 * 1024 * 1024 * 1024
     end
     number.round
   end
