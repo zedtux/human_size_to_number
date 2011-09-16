@@ -9,12 +9,18 @@ This gem implement the missing reverse of the [ActionView::Helpers::NumberHelper
 Usage
 -----
 
-    > "123 Bytes".human_size_to_number # => 123
-    > "1.12 KB".human_size_to_number   # => 1239
-    > "12.1 KB".human_size_to_number   # => 12390
-    > "1.18 MB".human_size_to_number   # => 1237320
-    > "1.15 GB".human_size_to_number   # => 1234803098
-    > "1.12 TB".human_size_to_number   # => 1231453023109
+    > "0 Bytes".human_size_to_number                # => 0
+    > "123 Bytes".human_size_to_number              # => 123
+    > "1.12 KB".human_size_to_number                # => 1239
+    > "12.1 KB".human_size_to_number                # => 12390
+    > "1.18 MB".human_size_to_number                # => 1237320
+    > "1.15 GB".human_size_to_number                # => 1234803098
+    > "1.12 TB".human_size_to_number                # => 1231453023109
+    > "lorem".human_size_to_number                  # => nil
+    > "lorem".human_size_to_number(:raise => true)  # => String::InvalidSizeStringError: String::InvalidSizeStringError
+                                                                 from ./lib/human_size_to_number/helper.rb:18:in `human_size_to_number'
+                                                                 from (irb):3
+                                                                 from :0
 
 Project Tracking
 ----------------
