@@ -24,6 +24,11 @@ describe String do
         "0 Bytes".human_size_to_number.should == 0
       end
     end
+    context "when passing the string 1 Byte" do
+      it "should return the number 1" do
+        "1 Byte".human_size_to_number.should == 1
+      end
+    end
     context "when passing the string 123 Bytes" do
       it "should return the number 123" do
         "123 Bytes".human_size_to_number.should == 123

@@ -10,7 +10,7 @@ class String
   end
   
   def human_size_to_number(options={})
-    size, unit = self.scan(/(\d*\.?\d+)\s?(Bytes|KB|MB|GB|TB)/).first
+    size, unit = self.scan(/(\d*\.?\d+)\s?(Bytes?|KB|MB|GB|TB)/).first
     number = begin
       Float(size)
     rescue ArgumentError, TypeError
@@ -21,7 +21,7 @@ class String
       end
     end
     number = case unit
-    when "Bytes"
+    when "Byte", "Bytes"
       number
     when "KB"
       number * 1024
