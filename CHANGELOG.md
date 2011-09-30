@@ -1,3 +1,8 @@
+1.0.1
+-----
+
+ - Fixed when passing '1 Byte'
+
 1.0.0
 -----
 
