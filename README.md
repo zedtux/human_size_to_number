@@ -33,7 +33,7 @@ Compatibility
 
 human\_size\_to\_number is tested against REE, ruby-head, jruby, 1.8.7, 1.9.2, 1.9.3.
 
-<img src="https://travis-ci.org/zedtux/human_size_to_number.png?branch=master&.png"/>
+[![Build Status](https://secure.travis-ci.org/zedtux/human_size_to_number.png)](http://travis-ci.org/zedtux/human_size_to_number)
 
 [Build History](http://travis-ci.org/zedtux/human_size_to_number)
 
