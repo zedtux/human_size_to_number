@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rake"
   
   s.add_development_dependency "rspec"
+  puts "JRUBY_VERSION: \"#{JRUBY_VERSION}\""
   unless defined?(JRUBY_VERSION)
     if RUBY_VERSION[0, 3] == "1.8"
       s.add_development_dependency "rcov"
