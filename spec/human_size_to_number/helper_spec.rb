@@ -39,12 +39,22 @@ describe String do
         "1.21 KB".human_size_to_number.should == 1239
       end
     end
+    context "when passing the string 1.21 kb" do
+      it "should return the number 1239" do
+        "1.21 KB".human_size_to_number.should == 1239
+      end
+    end
     context "when passing the string 12.1 KB" do
       it "should return the number 12390" do
         "12.1 KB".human_size_to_number.should == 12390
       end
     end
     context "when passing the string 1.18 MB" do
+      it "should return the number 1237320" do
+        "1.18 MB".human_size_to_number.should == 1237320
+      end
+    end
+    context "when passing the string 1.18 mb" do
       it "should return the number 1237320" do
         "1.18 MB".human_size_to_number.should == 1237320
       end
@@ -59,7 +69,17 @@ describe String do
         "1.15 GB".human_size_to_number.should == 1234803098
       end
     end
+    context "when passing the string 1.15 gb" do
+      it "should return the number 1234803098" do
+        "1.15 GB".human_size_to_number.should == 1234803098
+      end
+    end
     context "when passing the string 1.12 TB" do
+      it "should return the number 1231453023109" do
+        "1.12 TB".human_size_to_number.should == 1231453023109
+      end
+    end
+    context "when passing the string 1.12 tb" do
       it "should return the number 1231453023109" do
         "1.12 TB".human_size_to_number.should == 1231453023109
       end
