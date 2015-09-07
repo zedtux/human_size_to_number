@@ -10,7 +10,7 @@ class String
   end
   
   def human_size_to_number(options={})
-    size, unit = self.scan(/(\d*\.?\d+)\s?(Bytes?|KB|MB|GB|TB)/).first
+    size, unit = self.scan(/(\d*\.?\d+)\s?(Bytes?|KB|MB|GB|TB)/i).first
     number = begin
       Float(size)
     rescue ArgumentError, TypeError
