@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   
   s.add_dependency "rake"
   
-  s.add_development_dependency "rspec"
+  s.add_development_dependency "rspec", "~> 2.6.0"
 
   s.add_development_dependency "rcov" if RUBY_VERSION[0, 3] == "1.8"
   s.add_development_dependency "simplecov" if RUBY_VERSION[0, 3] == "1.9"
