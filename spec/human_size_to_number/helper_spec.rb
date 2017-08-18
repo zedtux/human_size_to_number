@@ -29,6 +29,11 @@ describe String do
         "1 Byte".human_size_to_number.should == 1
       end
     end
+    context "when passing the string 1 byte" do
+      it "should return the number 1" do
+        "1 byte".human_size_to_number.should == 1
+      end
+    end
     context "when passing the string 123 Bytes" do
       it "should return the number 123" do
         "123 Bytes".human_size_to_number.should == 123
@@ -37,6 +42,11 @@ describe String do
     context "when passing the string 1.21 KB" do
       it "should return the number 1239" do
         "1.21 KB".human_size_to_number.should == 1239
+      end
+    end
+    context "when passing the string 1.21 kb" do
+      it "should return the number 1239" do
+        "1.21 kb".human_size_to_number.should == 1239
       end
     end
     context "when passing the string 12.1 KB" do
@@ -49,6 +59,11 @@ describe String do
         "1.18 MB".human_size_to_number.should == 1237320
       end
     end
+    context "when passing the string 1.18 mb" do
+      it "should return the number 1237320" do
+        "1.18 mb".human_size_to_number.should == 1237320
+      end
+    end
     context "when passing the string 1 MB" do
       it "should return the number 1048576" do
         "1 MB".human_size_to_number.should == 1048576
@@ -59,9 +74,19 @@ describe String do
         "1.15 GB".human_size_to_number.should == 1234803098
       end
     end
+    context "when passing the string 1.15 gb" do
+      it "should return the number 1234803098" do
+        "1.15 gb".human_size_to_number.should == 1234803098
+      end
+    end
     context "when passing the string 1.12 TB" do
       it "should return the number 1231453023109" do
         "1.12 TB".human_size_to_number.should == 1231453023109
+      end
+    end
+    context "when passing the string 1.12 tb" do
+      it "should return the number 1231453023109" do
+        "1.12 tb".human_size_to_number.should == 1231453023109
       end
     end
     context "when passing the string lorem Bytes" do
